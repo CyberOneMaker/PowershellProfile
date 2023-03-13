@@ -5,6 +5,11 @@ $Shell.WindowTitle="The CyberRange..."
 #Show a custom message
 Write-Host "Welcome $env:Username"
 
+$tmp = $ProgressPreference
+$ProgressPreference = "SilentlyContinue"
+$computerInfo = Get-ComputerInfo
+$ProgressPreference = $tmp
+
 
 Set-Location "C:\Users\Klyde.Whitman\OneDrive - USDA\Documents\PowerShell\"
 Set-Alias ll Get-ChildItem

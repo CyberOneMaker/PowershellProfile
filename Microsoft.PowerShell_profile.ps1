@@ -9,3 +9,4 @@ function prompt {
     $date = Get-Date -Format 'MM/dd/yyyy hh:mm:ss tt'
     Write-Host "PS $($executionContext.SessionState.Path.CurrentLocation)$('>' * ($nestedPromptLevel + 1)) ($($ExecutionContext.SessionState.LanguageMode.ToString())) [$date]"
 }
+winget upgrade

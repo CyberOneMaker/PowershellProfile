@@ -1,3 +1,11 @@
+#Rename the shell
+$Shell = $Host.UI.RawUI
+$Shell.WindowTitle="The CyberRange..."
+
+#Show a custom message
+Write-Host "Welcome $env:Username"
+
+
 Set-Location "C:\Users\Klyde.Whitman\OneDrive - USDA\Documents\PowerShell\"
 Set-Alias ll Get-ChildItem
 function prompt {
